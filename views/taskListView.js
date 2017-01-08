@@ -6,7 +6,7 @@
 
   TaskListView.prototype.convert = function(){
     var output = this.taskList.allObjects.map(function(task) {
-      return "<li>" + task.text + "</li>"
+      return "<li class='taskContent'>" + task.text + " - " + "<span class='status'>" + task.status + "</span></li>"
     })
     return "<ul>" + output.join('') + "</ul>"
   }

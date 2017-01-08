@@ -5,14 +5,17 @@
 
   <h1>Task List</h1>
 
-  <form>
+  <form id='taskForm'>
     <textarea id='text' rows='2' cols='50'></textarea>
     <input type='submit' value='create'>
   </form>
 
   <div id='taskList'></div>
 
+  <script src='controller.js'></script>
   <script src="models/task.js"></script>
   <script src="models/taskList.js"></script>
+  <script src='views/taskListView.js'></script>
+  <script src='index.js'></script>
 </body>
 </html>
